@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>form-1</title>
+</head>
+<body>
+    <h1>form 입력, 선택 컨트롤하는 양식</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>로그인양식</legend> <!-- 숨김대상 -->
+            <!-- 컨트롤 요소 배치 위치 -->
+            <ul>
+                <li><input type="text" name="user_name" placeholder="이름"></li>
+                <li><input type="text" name="user_id" placeholder="아이디"></li>
+                <li><input type="password" name="user_pw" placeholder="비밀번호"></li>
+                <li>
+                    성별 :
+                    <label for="male">남</label>
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="female">여</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                </li>
+                <li>
+                    정보 저장 동의 :
+                    <label>동의함</label>
+                        <input type="radio" name="agree_g" value="agree">
+                    <label>동의안함</label>
+                        <input type="radio" name="agree_g" value="disagree">
+                </li>
+                <li>
+                    관심사(2개 이상 선택하세요)
+                    <label>
+                        영화
+                        <input type="checkbox" name="interest" value="movie" id="movie">
+                    </label>
+                    <label>
+                    운동
+                        <input type="checkbox" name="interest" value="sports" id="sports">
+                    </label>
+                    <label>
+                    독서
+                        <input type="checkbox" name="interest" value="reading" id="reading">
+                    </label>
+                </li>
+                <li>
+                    첨부파일 <input type="file">
+                </li>
+            </ul>
+            <p>
+                <button type="submit">가입</button>
+                <button type="reset">가입취소</button>
+            </p>
+        </fieldset>
+    </form>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>로그인양식</legend>
+            <!-- 컨트롤 요소 배치 위치 -->
+            <ul>
+                <li><input type="text" name="user_name" placeholder="이름"></li>
+                <li><input type="text" name="user_id" placeholder="아이디"></li>
+                <li><input type="text" name="user_pw" placeholder="비밀번호"></li>
+                <li>
+                    성별:
+                    <label>
+                        남<input type="radio" name="gender" value="male" id="male">
+                    </label>
+                    <label>
+                        여<input type="radio" name="gender" value="female" id="female">
+                    </label>
+                </li>
+                <li>
+                    정보 저장 동의:
+                    <label for="agree">동의함</label>
+                    <input type="radio" name="agree_g" value="agree" id="agree">
+                    <label for="disagree">동의안함</label>
+                    <input type="radio" name="agree_g" value="disagree" id="disagree">
+                </li>
+                <li>
+                    관심사(2개 이상 선택하세요)
+                    <label>영화<input type="checkbox" name="interest" value="movie"></label>
+                    <label>운동<input type="checkbox" name="interest" value="sports"></label>
+                    <label>독서<input type="checkbox" name="interest" value="reading"></label>
+                </li>
+                <li>첨부파일<input type="file"></li>
+            </ul>
+            <button type="submit">가입</button>
+            <button type="reset">가입취소</button>
+        </fieldset>
+    </form>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>가입양식</legend>
+            <!-- 컨트롤 요소 배치 위치 -->
+        </fieldset>
+    </form>
+</body>
+</html>
