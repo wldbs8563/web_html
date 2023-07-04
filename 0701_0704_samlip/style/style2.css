@@ -1,0 +1,60 @@
+/* headr */
+header {
+    width:1200px; height:92px;
+    margin:0 auto;
+}
+header h1 {
+    width:60px; height:70;
+    float:left;
+}
+header h1 a {}
+header h1 a img {
+    width:100%;
+    margin:11px 0 11px 20px;
+}
+header nav {
+    float:left;
+    margin:35px 0 35px 233.5px;
+}
+header nav ul {}
+header nav ul li {float:left; }
+header nav ul li a {
+    padding-right:40px; font-size:1.2rem;
+}
+header nav ul li:last-child a {padding-right:0;}
+header .lnb { float:right; margin:35px 20px 35px 0;}
+header .lnb li { float:left;}
+header .lnb li span {
+    width:1px; height:13px;
+    background-color:#aaa;
+    display:block; margin:3px 20px 0 20px;
+}
+header .lnb li a {font-size:1.2rem;}
+/* main */
+main {}
+main .bread_crumbs_bg {
+    height:58px; background-color:#f1f1f1;
+    border-top:1px solid #aaa ;
+    border-bottom:1px solid #aaa ;
+}
+main .bread_crumbs_bg .bread_crumbs {
+    text-align:right; width:1200px;
+}
+main .bread_crumbs_bg .bread_crumbs a {}
+main .bread_crumbs_bg .bread_crumbs em {}
+main .contents1 {}
+main .contents1 h1 {}
+main .contents1 p {}
+main .c2_bg {}
+main .c2_bg .contents2 {}
+main .c2_bg .contents2 p {}
+main .contents3 {}
+main .contents3 h2 {}
+main .contents3 p {}
+main .c4_bg {}
+main .c4_bg .contents4 {}
+main .c4_bg .contents4 h2 {}
+main .c4_bg .contents4 ul {}
+main .c4_bg .contents4 ul li {}
+main .c4_bg .contents4 ul li h3 {}
+main .c4_bg .contents4 ul li p {}

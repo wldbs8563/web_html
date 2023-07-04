@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Document</title>
+    <style>
+        /* CSS 우선순위의 차이(클래스, 아이디, 태그, 인라인),
+        동일한 순위일 경우 무엇을 기준으로 순위가 정해지는가? */
+        inline > id > class > tag
+        동일한 순위일 경우 가장 나중에 나오는 것이 적용된다
+        .b {color:red;}
+        #b {color:green;}
+        article {
+            /* layout css -크기, 정렬 (+여백) */
+            width:543px;
+            background-color:#d9d9d9;
+            margin:0 auto;
+        }
+        article h1 {}
+        article p {}
+        #define {
+            background-color:coral;
+            width:543px; margin:50px auto 0;
+            /* overflow:hidden; */
+        }
+        #define::after {clear:both; display:block; content:'';}
+        *{margin:0; padding:0; box-sizing:border-box;}
+        #define dt {float:left; width:49%;}
+        #define dd {float:right; width:49%;}
+        #define dt:nth-child(1) {background-color:coral;}
+        #define dt:nth-child(3) {background-color:cornflowerblue;}
+        #define dd:nth-child(2) {background-color: pink;}
+        #define dd:nth-child(4) {background-color:skyblue;}
+
+        figure {
+            background-color: aquamarine;
+            width:543px; margin:0 auto;
+            overflow:hidden;
+        }
+        figure img {
+            width:150px; float:left;
+        }
+        figure img figcaption {
+            float:right;
+        }
+        /* float 부유특징에 따른 문제해결 */
+        /* 부모요소의 H값이 없으면 부모는 자식만틈 크기를 인식한다
+        그러나 자식이 float를 가지면 부모에서 벗어나는 특징 때문에
+        부모가 자식만틈의 크기를 못가지고 H 0이 되는 문제가 발생한다 */
+        /* 해결방법 */
+        /* 1. 가출한 flaot 자식 잡기
+            부모요소에 overflow:hidden 명령(영역재인식)
+            2. 새로운 자식 입양하기
+            부모요소에 가상 요소(입양) 삽입
+            부모::after {
+                clear:both; content:''; display:block;
+            }
+            3. 강제높이설정(추천x)Z
+            부모요소에 강제 높이값 설정 height px*/
+
+            footer {
+                width:700px; margin:0 auto;
+                background-color: blueviolet; text-align:right;
+            }
+            footer span {
+                width:100px; height:100px;
+                display:inline-block; margin-left:-6px;
+                border-radius:50%; text-align:center; line-height:100px;
+            }
+            /* inline-block 특징 */
+            /* 1. inline의 옆으로 가는 특징을 가진다
+                2. block특징으로 크기와 여백을 가진다
+                3. inline과 block에 들어가는 css를 거의 모두 가질 수 있다. */
+            footer span:nth-child(1) {background-color:red;}
+            footer span:nth-child(2) {background-color:green;}
+            footer span:nth-child(3) {background-color: blue;}
+            footer span:nth-child(4) {background-color:hotpink;}
+    </style>
+</head>
+<body>
+    <h1 class="b id=a" style="color:blue;">제목</h1>
+    <article><!-- 뉴스, 블로그 페이지 내 독립영역 틀 -->
+        <h1>제목</h1>
+        <p>내용</p>
+    </article>
+    <dl id="define">
+        <dt>제목1</dt>
+        <dd>내용1</dd>
+        <dt>제목2</dt>
+        <dd>내용2</dd>
+    </dl>
+    <figure>
+        <img src="./img/spc-samlip-logo-new.png" alt="">
+        <figcaption>삼립 로고 이미지</figcaption>
+    </figure>
+    <footer>
+        <span>span1</span>
+        <span>span2</span>
+        <span>span3</span>
+        <span>span4</span>
+    </footer>
+</body>
+</html>
