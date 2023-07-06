@@ -1,30 +1,63 @@
 /* header */
-header {}
-header .event_bg {}
+header {
+    background-color: yellow;
+}
+header .event_bg {
+    background-color:#aaa;
+}
 header .event_bg p {}
-header .h_middle {}
-header .h_middle h1 {}
-header .h_middle .lnb_left {}
+header .h_middle {
+    background-color:skyblue;
+}
+header .h_middle h1 {
+    background-color:pink;
+}
+header .h_middle .lnb_left {
+    background-color:greenyellow;
+}
 header .h_middle .lnb_left li {}
-header .h_middle .lnb_left li a {}
-header .h_middle .lnb_right {}
+header .h_middle .lnb_left li a {
+    background-color:plum;
+}
+header .h_middle .lnb_right {
+    background-color:hotpink;
+}
 header .h_middle .lnb_right li {}
-header nav {}
+header .h_middle .lnb_right li a {
+    background-color:orange;
+}
+header nav {
+    background-color:coral;
+}
 header nav ul {}
 header nav ul li {}
-header nav ul li a {}
+header nav ul li a {
+    background-color: cornflowerblue;
+}
 /* side_menu */
-.side_menu {}
-.side_menu a {}
+.side_menu {
+    background-color:yellow;
+}
+.side_menu a {
+    background-color: blueviolet;
+}
 /* main */
-main .main {}
+main .main {
+    background-color:pink;
+}
 main .banner {}
 main .banner a {}
-main h3 {}
-main .items {}
+main h3 {
+    background-color:goldenrod;
+}
+main .items {
+    background-color:skyblue;
+}
 main .items li {}
 main .items li p {}
-main .items li p a {}
+main .items li p a {
+    background-color:yellowgreen;
+}
 main .items li p a img {}
 main .items li p span {}
 main .items li p em {}
@@ -33,8 +66,12 @@ main .sappun_made {}
 main .sappun_made p {}
 main .sappun_made p a {}
 /* footer */
-footer {}
-footer .f_top {}
+footer {background-color:blanchedalmond;}
+footer .f_top {
+    background-color:aqua;
+}
 footer .f_top li {}
-footer .f_top li a {}
+footer .f_top li a {
+    background-color:yellow;
+}
 footer address {}
