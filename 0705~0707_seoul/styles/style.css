@@ -1,0 +1,269 @@
+/* popup */
+#top {
+    position:fixed; right:50px; bottom:50px;
+    width:34px; height:34px;
+}
+#top img {width:100%;}
+/* all layout */
+header, main .banner, main .service, main .bnr_bg .covid_bnr,
+main .board, main .field_info, main .news, footer {
+    width:1152px; margin:0 auto;
+    background-color:aqua;
+}
+/* header-h top */
+header {}
+header #h_top {
+    background-color:bisque;
+    height:48px;
+}
+header #h_top .left {
+    background-color:pink;
+    float:left;
+}
+header #h_top .left h1 {
+    float:left;
+    padding-top:10px;
+    width:110px; height:28px;
+}
+header #h_top .left h1 a {}
+header #h_top .left h1 a img {width:100%;}
+header #h_top .left nav {
+    float:left;
+}
+header #h_top .left nav ul {}
+header #h_top .left nav ul li {
+    float:left; margin-left:20px;
+}
+header #h_top .left nav ul li a {
+    line-height:48px; letter-spacing:-0.02em;
+}
+header #h_top .right {
+    background-color:cornflowerblue;
+    float:right;
+}
+header #h_top .right li {
+    float:left
+}
+header #h_top .right li a {
+    margin-left:20px; line-height:48px;
+    letter-spacing:-0.02em;
+}
+header #h_top .right li:first-child a {margin-left:0;}
+/* header-h btm */
+header #h_btm {
+    height:119px;
+}
+header #h_btm h1 {
+    margin-top:45.5px;
+    float:left; width:150px; height:28px;
+}
+header #h_btm h1 a {}
+header #h_btm h1 a img {width:100%;}
+header #h_btm #search_frm {
+    float:left; margin:37px 0 0 230px;
+    border:2px solid #1E6CB3;
+    width:365px; height:45px;
+    padding:11px 32px 0;
+}
+header #h_btm #search_frm fieldset {border:0;}
+header #h_btm #search_frm fieldset legend {display:none;}
+header #h_btm #search_frm fieldset input {
+    float:left; background:none;
+    width:calc(100% - 20px);
+}
+header #h_btm #search_frm fieldset input::placeholder {
+    letter-spacing:-0.02em; color:#1E6CB3;
+}
+header #h_btm #search_frm fieldset #search_btn {
+    width:20px; height:20px; float:right;
+    border:0; background:none; cursor:pointer
+}
+header #h_btm #search_frm fieldset #search_btn img {width:100%;}
+header #h_btm .right {
+    float:right; margin-top:10px;
+}
+header #h_btm .right #langfrm {
+    text-align:right;
+}
+header #h_btm .right #langfrm fieldset {border:0;}
+header #h_btm .right #langfrm fieldset legend {display:none;}
+header #h_btm .right #langfrm fieldset select {
+    width:90px; border:1px solid #1E6CB3;
+    font-size:0.833rem; letter-spacing:-0.02em;
+    padding:5px 0; margin-bottom:5px;
+}
+header #h_btm .right #langfrm fieldset select option {
+    letter-spacing:-0.02em; font-size:0.833rem;
+}
+header #h_btm .right #langfrm fieldset #lang_btn {
+    width:30px; height:30px; background:#1E6CB3;
+    color:#fff; font-size:0.833rem; border:0;
+    cursor:pointer;
+}
+header #h_btm .right .weather {}
+header #h_btm .right .weather .current_weather {}
+header #h_btm .right .weather .current_weather em {
+    font-size:2.074rem; letter-spacing:-0.02em; font-weight:500;
+}
+header #h_btm .right .weather .current_dust {
+    font-size:0.833rem; letter-spacing:-0.02em;
+}
+/* main */
+main {}
+/* main-1광고배너 */
+main .banner {
+    background-color:gray;
+    overflow:hidden;
+}
+main .banner .left {
+    background-color: aqua;
+    width:770px; height:350px;
+    position:relative; float:left;
+}
+main .banner .left img {
+    width:100%;
+}
+main .banner .left .close {
+    position:absolute; right:10px; bottom:10px;
+    border-radius:5px; padding:10px; letter-spacing:-0.02em;
+    background-color: #1E6CB3; color:#fff; font-weight:500;
+}
+main .banner .right {
+    background-color:yellow;
+    width:360px; float:right;
+}
+main .banner .right .covid {
+    height:230px; display:inline-block;
+    position:relative;
+}
+main .banner .right .covid .date {
+    position:absolute; right:22px; top:20px;
+}
+main .banner .right .covid .data {
+    background-color: bisque;
+}
+main .banner .right .covid .data1 {
+    position:absolute; right:240px; top:84px;
+}
+main .banner .right .covid .data2 {
+    position:absolute; right:87px; top:84px;
+}
+main .banner .right .covid .data3 {
+    position:absolute; right:264px; top:160px;
+}
+main .banner .right .covid .data4 {
+    position:absolute; right:164px; top:160px;
+}
+main .banner .right .covid .data5 {
+    position:absolute; right:53px; top:160px;
+}
+main .banner .right .covid .img {width:100%;}
+main .banner .right .banner_traffic {
+    height:110px; margin-top:10px;
+    display:inline-block;
+}
+main .banner .right .banner_traffic img {width:100%}
+/* 주요서비스~새소식 제목 디자인 그룹 */
+/* 정리후 */
+main section .title {
+    background-color: coral;
+}
+main section .title h2 {}
+main section .title .site {}
+main section .title .more {}
+/* 정리전 */
+/* main .service .title {}
+main .service .title h2 {}
+main .service .title .site {}
+main .board .event .title {}
+main .board .event .title h2 {}
+main .board .event .title .more {}
+main .board .festival .title {}
+main .board .festival .title h2 {}
+main .board .festival .title .more {}
+main .board .service .title {}
+main .board .service .title h2 {}
+main .field_info .title {}
+main .field_info .tilte h2 {}
+main .news .title {}
+main .news .title h2 {}
+main .news .title .more {} */
+/* main-2주요서비스 */
+main .service {}
+main .service .title {}
+main .service .title h2 {}
+main .service .title .site {}
+main .service .contents {}
+main .service .contents a {}
+main .service .contents a img {}
+main .service .contents a span {}
+/* main-3배너 */
+main .bnr_bg {
+    background-color:#EFF4F8;
+}
+main .bnr_bg .covid_bnr {}
+main .bnr_bg .covid_bnr a {}
+main .bnr_bg .covid_bnr a img {}
+/* main-4게시판 */
+main .board {}
+main .board .event {}
+main .board .event .title {}
+main .board .event .title h2 {}
+main .board .event .title .more {}
+main .board .event .contents {}
+main .board .event .contents a {}
+main .board .event .contents a span {}
+main .board .event .contents a .administrative {}
+main .board .event .contents a .environment {}
+main .board .event .contents a .welfare {}
+main .board .event .contents a .housing {}
+main .board .event .contents a .culture {}
+main .board .festival {}
+main .board .festival .title {}
+main .board .festival .title h2 {}
+main .board .festival .title .more {}
+main .board .festival .contents {}
+main .board .festival .contents a {}
+main .board .festival .contents a span {}
+main .board .festival .contents a span .environment {}
+main .board .festival .contents a span .economy {}
+main .board .festival .contents a span .culture {}
+main .board .service {}
+main .board .service .title {}
+main .board .service .title h2 {}
+main .board .service .contents {}
+main .board .service .contents a {}
+/* main-5분야정보 */
+main .field_info {}
+main .field_info .title {}
+main .field_info .tilte h2 {}
+main .field_info .contents {}
+main .field_info .contents a {}
+main .field_info .contents a img {}
+main .field_info .contents a span {}
+/* main-6새소식 */
+main .news {}
+main .news .title {}
+main .news .title h2 {}
+main .news .title .more {}
+main .news .contents {}
+main .news .contents a {}
+main .news .contents a img {}
+main .news .contents a span {}
+/* footer-f top */
+footer {}
+footer .top {}
+footer .top .fnb {}
+footer .top .fnb a {}
+footer .top .sns {}
+footer .top .sns a {}
+/* footer-f btm */
+footer .btm {}
+footer .btm .btm_left {}
+footer .btm .btm_left p {}
+footer .btm .btm_left p img {}
+footer .btm .btm_left address {}
+footer .btm .btm_left address a {}
+footer .btm .btm_right {}
+footer .btm .btm_right a {}
+footer .btm .btm_right a img {}
