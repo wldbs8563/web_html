@@ -1,6 +1,5 @@
 /* header */
 header {
-    background-color: yellow;
 }
 header .event_bg {
     background-color:#aaa; height:40px;
@@ -9,87 +8,144 @@ header .event_bg p {
     text-align:center; line-height:40px;
 }
 header .h_middle {
-    background-color:skyblue;
     margin:0 auto; width:1300px;
     overflow:hidden; height:104px;
 }
 header .h_middle h1 {
-    background-color:pink; float:left;
+    float:left;
     font-size:2.074rem; font-weight:700;
     margin:40px 0 0 582px;
 }
 header .h_middle .lnb {
-    float:right; margin:40px;
+    float:right; margin-top:30px;
 }
-header .h_middle .lnb .left {
-    background-color:greenyellow;
-    float:left;
+header .h_middle .lnb .left{
+    float:left; font-size:1.2rem; margin-top:20px;
 }
 header .h_middle .lnb .left li {
     float:left;
 }
+header .h_middle .lnb .left li:nth-child(3) {position:relative;}
+header .h_middle .lnb .left li:nth-child(4) {
+    position:absolute; right:400px; top:110px;
+    border:1px solid #FF7F50; border-radius:15px;
+}
+header .h_middle .lnb .left li:nth-child(4) a {
+    margin:8px; display:inline-block;
+}
 header .h_middle .lnb .left li a {
-    background-color:plum;
     margin-right:21px;
 }
 header .h_middle .lnb .right {
-    background-color:hotpink;
     float:right;
 }
 header .h_middle .lnb .right li {
     float:left;
 }
 header .h_middle .lnb .right li a {
-    background-color:orange; width:30px; height:30px;
+    width:30px; height:30px;
     display:inline-block; line-height:30px; margin-right:20px;
 }
 header .h_middle .lnb .right li a img {width:100%;}
 header nav {
-    background-color:coral;
+    width:1300px; height:54px; margin:0 auto;
 }
-header nav ul {}
-header nav ul li {}
+header nav ul {padding:20px;}
+header nav ul li {float:left;}
 header nav ul li a {
-    background-color: cornflowerblue;
+    margin-right:32.5px; font-size:1.2rem;
+    font-weight:500;
 }
+header nav ul li:last-child a {margin-right:0;}
 /* side_menu */
 .side_menu {
-    background-color:yellow;
+    position:absolute; right:0;
+    width:40px;
 }
 .side_menu a {
-    background-color: blueviolet;
+    background-color: #fff;
+    width:40px; height:40px; display:inline-block;
+    border:1px solid #aaa;padding:10px;
 }
+.side_menu a:first-child {background-color:#FF7F50; padding:15px;}
+.side_menu a img {}
 /* main */
 main .main {
-    background-color:pink;
 }
-main .banner {}
-main .banner a {}
+main .main img {width:100%;}
+main .banner {
+
+    width:1300px; margin:0 auto;
+}
+main .banner a {
+    width:410px; height:350px; margin-top:80px;
+    display:inline-block; margin-left:29px;
+}
+main .banner a:first-child {margin-left:0;}
+main .banner a img {width:100%;}
 main h3 {
-    background-color:goldenrod;
+    width:1300px; margin:0 auto;
+    text-align:center; font-size:1.728rem;
+    font-weight:500; padding:80px 0;
 }
 main .items {
-    background-color:skyblue;
+    width:1300px; margin: 0 auto;
+    overflow:hidden;
 }
-main .items li {}
-main .items li p {}
+main .items li {
+    float:left; margin-left:19.5px;
+}
+main .items li:first-child {margin-left:0;}
+main .items li:nth-child(4) {margin-left:0;}
+main .items li p {
+    margin:10px 0;
+}
 main .items li p a {
-    background-color:yellowgreen;
+    width:420px; height:300px;
 }
 main .items li p a img {}
-main .items li p span {}
-main .items li p em {}
-main .items li p strong {}
-main .sappun_made {}
-main .sappun_made p {}
-main .sappun_made p a {}
+main .items li p span {
+    font-size:1.2rem; font-weight:700; 
+}
+main .items li p:nth-child(4) {}
+main .items li p em {
+    color:#fff;
+    width:60px; height:20px; background-color:#FFE4C4;
+    padding:5px;
+}
+main .items li p strong {
+    color:#fff;
+    width:80px; height:20px; background-color:#000080;
+    margin:5px; padding:5px;
+}
+main .sappun_made {
+    height:280px; background-image: url(../imags/sappun_img/made_img.jpg);
+}
+main .sappun_made p {
+    text-align:center; color:#fff;
+    font-size:2.074rem; position: relative; top:100px
+}
+main .sappun_made p span {
+    font-size:2.074rem; margin-top:150px;
+}
+main .sappun_made p a {
+    border:1px solid #fff;
+    color:#fff; margin:5px 10px;
+}
 /* footer */
-footer {background-color:blanchedalmond;}
+footer {
+    width:1300px; margin:0 auto;
+}
 footer .f_top {
-    background-color:aqua;
+    overflow:hidden;
 }
-footer .f_top li {}
+footer .f_top li {
+    float:left;
+}
 footer .f_top li a {
-    background-color:yellow;
+    margin:20px; display:inline-block;
+    color:#aaa;
 }
-footer address {}
+footer address {
+    line-height:40px;
+}
