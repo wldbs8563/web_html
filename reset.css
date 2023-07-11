@@ -17,3 +17,6 @@ table,tr,th,td {border-collapse:collapse;}
 u,ol,li {list-style:none;}
 a {color:#000;}
 input {outline:none; border:0;}
+button {cursor:pointer; border:0;}
+fieldset {border:0;}
+.skip {display:none;}
