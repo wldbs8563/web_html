@@ -1,0 +1,226 @@
+/* 1. title */
+.title_bg {
+    background:url(../images/bg1.png) no-repeat fixed center 70%;
+    background-size:cover; position:relative; 
+}
+.title_bg::after {
+    content:'';
+    display:block; width:100%; height:800px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(0,0,0,0.7) 80%);
+    position:absolute; left:0; top:0; z-index:90;
+    /* absolute적용 시 기본 block w100% inline처럼 변한다 */
+}
+.title_bg #snow {
+    position:absolute; left:0; top:0;
+    width:100%; height:800px; z-index:200;
+}
+.title_bg .title {
+    width:1200px; height:800px; margin:0 auto;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+    z-index:300; position:relative;
+}
+.title_bg .title .logo {
+    align-self:flex-start;
+}
+.title_bg .title .logo img {}
+.title_bg .title h1 {
+    font-size:3.157rem; line-height:90px;
+    text-align:center;margin-top:98px; color:#fff;
+}
+.title_bg .title h1 em {
+    font-size:3.157rem;
+    font-weight:700;
+}
+.title_bg .title .spon {
+    padding:30px 70px; border-radius:50px;
+    margin-top:92px; background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+}   
+.title_bg .title .spon span {
+    font-size:1.777rem; font-weight:500; color:#fff;
+}
+.title_bg .title .spon img {}
+.title_bg .title .question {
+    align-self:flex-end;
+    padding:15px 20px; border-radius:30px;
+    background:#222; display:flex; flex-flow:row nowrap;
+    justify-content:center;
+}
+.title_bg .title .question span {
+    font-size:1.333rem; color:#fff;
+}
+.title_bg .title .question img {}
+/* 2행 퀴즈영역 */
+.quiz_bg {
+    background:url(../images/quiz_bg.png) no-repeat center;
+    width:100%; background-size:cover;
+}
+.quiz_bg .quiz {
+    width:1200px; margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    padding:100px 0;
+}
+.quiz_bg .quiz .left {
+    display:flex; flex-flow:column nowrap;
+}
+.quiz_bg .quiz .left > * {margin-bottom:35px;}
+.quiz_bg .quiz .left h2 {
+    font-size:3.157rem; font-weight:700;
+    align-self:center; letter-spacing:-0.04em;
+    color:#fff;
+}
+.quiz_bg .quiz .left h3 {
+    font-size:1.333rem; letter-spacing:-0.04em;
+    color:#fff;
+}
+.quiz_bg .quiz .left #quiz_frm {}
+.quiz_bg .quiz .left #quiz_frm fieldset {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul {margin-bottom:10px;}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li {
+    margin-bottom: 25px;
+}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label input {
+    appearance:none;
+}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label span {
+    background:url(../images/quiz_un_check.png) no-repeat;
+    padding-left:34px; color:#fff;
+}
+/* 상태선택자 (radio check될 경우 span의 이미지 변경하기 */
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label input:checked+span {
+    background:url(../images/quiz_check.png) no-repeat;
+}
+.quiz_bg .quiz .left #quiz_frm fieldset #answer_btn {
+    padding:20px 170px; border-radius:30px;
+    background:#222; font-size:1.333rem;
+    color:#fff;
+}
+.quiz_bg .quiz .right {
+    width:550px; text-align:center;
+}
+.quiz_bg .quiz .right h2 {
+    height:70px; background:#FF9300;;
+    border-radius:20px 20px 0 0;
+    display:flex; flex-flow:row nowrap;
+    align-items:center; justify-content:center;
+}
+.quiz_bg .quiz .right h2 span {
+    font-size:1.777rem; color:#fff;
+}
+.quiz_bg .quiz .right .contents {
+    padding:70px 0; background:#fff;
+    border-radius:0 0 20px 20px;
+}
+.quiz_bg .quiz .right .contents em {
+    font-size:6.25rem; color:#FF9300;
+    font-weight:700;
+}
+.quiz_bg .quiz .right .contents span {
+    font-size:2.369rem; font-weight:700;
+}
+.quiz_bg .quiz .right .contents span:nth-child(2) {color:#FF9300;}
+.quiz_bg .quiz .right .contents span:nth-child(3) {}
+.quiz_bg .quiz .right .update {
+    margin-top:30px; letter-spacing:-0.04em;
+    color:#fff;
+}
+/* 3. video */
+.youtube {
+    background:url(../images/video_bg.png) no-repeat fixed center;
+    width:100%; background-size: cover; padding:100px 0;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+.youtube h2 {
+    font-size:3.157rem; font-weight:500;
+    letter-spacing:-2.52px; line-height:normal;
+    text-align:center; padding-bottom:50px;
+}
+.youtube iframe {width:800px; height:500px;}
+.youtube .spon {
+    padding:30px 70px; border-radius:50px;
+    margin-top:50px; background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+}
+.youtube .spon span {
+    font-size:1.777rem; font-weight:500; color:#fff;
+}
+.youtube .spon span img {}
+/* 4. 50_bg */
+.bg50 {
+    background:url(../images/50_bg.png) no-repeat;
+    padding:100px 0; background-size:cover; width:100%;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+.bg50 .wrap50 {}
+.bg50 .wrap50 h2 {
+    font-size:3.157rem; line-height:90px;
+    font-weight:700; color:#fff;
+}
+.bg50 .wrap50 h2 span {
+    font-size:3.157rem;
+    width:150px; height:80px;
+    background:#fff; font-weight:700;
+    color:#222;
+}
+.bg50 .wrap50 .contents {
+    font-size:1.777rem;
+}
+.bg50 .wrap50 p {
+    padding-top:5px; line-height:60px;
+    color:#fff;
+}
+.bg50 .wrap50 p:last-child {
+    width:1200px; padding-top:50px;
+}
+.bg50 .wrap50 p img {width:100%;}
+/* 5. 인류재앙 */
+.warming_bg {background:#f1f1f1;}
+.warming_bg .warming {
+    width:1200px; margin:0 auto;
+    padding:100px 0;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+.warming_bg .warming h2 {
+    font-size:3.157rem; font-weight:700;
+} 
+.warming_bg .warming .contents {
+    padding:100px 0; text-align:center;
+    font-size:1.777rem; line-height:60px;
+}
+.warming_bg .warming ul {
+    display:flex; flex-flow:row nowrap;
+}
+.warming_bg .warming ul li {
+    background:#fff;
+    width:calc(33.33% - 40px / 3);
+    margin-right:20px;
+}
+.warming_bg .warming ul li:last-child {margin-right:0;}
+.warming_bg .warming ul li .top {
+    height:300px; background:center 60%;
+    background-size:cover;
+    text-align: center; padding:40px 40px 160px 40px;
+}
+.warming_bg .warming ul li:nth-child(1) .top {
+    background-image:url(../images/28.png);
+}
+.warming_bg .warming ul li:nth-child(2) .top {
+    background-image:url(../images/27.png);
+}
+.warming_bg .warming ul li:nth-child(3) .top {
+    background-image:url(../images/332.png);
+}
+.warming_bg .warming ul li .top h3 {
+    font-size:3.157rem; font-weight:700;
+}
+.warming_bg .warming ul li .top p {
+    font-size:1.333rem; margin-top:40px;
+}
+.warming_bg .warming ul li .list_contents {
+    line-height:29px; letter-spacing:-0.02em;
+    text-align:center; padding:10px 20px; background:#fff;
+}
